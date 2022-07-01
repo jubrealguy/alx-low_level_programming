@@ -10,6 +10,6 @@ int main(void)
 	char letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
-		printf("\n%c", letter);
+		printf("%c" , letter);
 	return (0);
 }
