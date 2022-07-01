@@ -13,5 +13,6 @@ int main(void)
 		putchar(small_letter);
 	for (capital_letter = 'A'; capital_letter <= 'Z'; capital_letter++)
 		putchar(capital_letter);
+	putchar('\n');
 	return (0);
 }
