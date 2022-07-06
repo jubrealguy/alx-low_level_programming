@@ -19,5 +19,6 @@ int main(void)
 	if (countto % 2 == 1)
 	{
 		printf("%li", a);
+	}
 	return (0);
 }
