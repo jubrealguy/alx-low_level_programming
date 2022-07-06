@@ -18,7 +18,7 @@ int main(void)
 			a += b;
 			b += a;
 		}
-		else
+		else if (countto == 50)
 		{
 			printf("%li, %li", a, b);
 			a += b;
