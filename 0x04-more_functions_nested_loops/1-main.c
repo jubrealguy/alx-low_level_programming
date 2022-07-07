@@ -3,6 +3,7 @@
 
 /**
  * main - check the code
+ * @c: character to check
  * Return: Always 0.
  */
 
