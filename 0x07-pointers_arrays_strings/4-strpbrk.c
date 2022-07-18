@@ -2,7 +2,7 @@
 #define NULL 0
 
 /**
- * _strspn - return length of string that matches values consistently
+ * _strpbrk - return pointer to byte in s that matches a byte in accept
  * @s: string to search
  * @accept: target matches
  * Return: number of bytes consecutively matched
