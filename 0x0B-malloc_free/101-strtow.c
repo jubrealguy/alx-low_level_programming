@@ -39,9 +39,7 @@ char **strtow(char *str)
 	char **chr;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 	decs = deccount(str);
 	if (!decs)
 		return (NULL);
@@ -56,20 +54,17 @@ char **strtow(char *str)
 			continue;
 		}
 		for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
+			;
 			chr[r] = malloc(i + 1);
 		if (chr[r] == NULL)
 		{
 			for (i = 0; i < r; i++)
-			{
 				free(chr[i]);
-			}
 			free(chr);
 			return (NULL);
 		}
 		for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
-		{
 			chr[r][i] = str[i];
-		}
 		chr[r][i] = '\0';
 		r++;
 		str += i;
