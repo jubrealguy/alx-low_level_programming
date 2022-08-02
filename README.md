@@ -1,1 +1,1 @@
-Let us talk about C
+Let's talk about C
