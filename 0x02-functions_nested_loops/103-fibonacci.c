@@ -6,9 +6,9 @@
 
 int main(void)
 {
-	long unsigned int a = 1;
-	long unsigned int b = 2;
-	long unsigned int sum = 2;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int sum = 2;
 	int i;
 
 	for (i = 0; b < 4000000; i++)
@@ -20,7 +20,6 @@ int main(void)
 		{
 			sum += b;
 		}
-
 		if (a % 2 == 0 && a < 4000000)
 		{
 			sum += a;
@@ -29,28 +28,3 @@ int main(void)
 	printf("%lu\n", sum);
 	return (0);
 }
-
-/**
- * int main(void)
-{
-	int sum_of_evens = 0;
-	int a, b;
-	int sum = 1;
-
-	a = 1;
-	b = 1;
-
-	while (b < 4000000)
-	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		if ((sum <= 4000000) && (sum % 2 == 0))
-		{
-			sum_of_evens += sum;
-		}
-	}
-	printf("%d\n", sum_of_evens);
-	return (0);
-}
-**/
