@@ -3,7 +3,35 @@
  * main - print sum of even Fionacci sequence up to 4,000,000
  * Return: 0
  */
+
 int main(void)
+{
+	long unsigned int a = 1;
+	long unsigned int b = 2;
+	long unsigned int sum = 2;
+	int i;
+
+	for (i = 0; b < 4000000; i++)
+	{
+		a = b + a;
+		b = a + b;
+
+		if (b % 2 == 0)
+		{
+			sum += b;
+		}
+
+		if (a % 2 == 0 && a < 4000000)
+		{
+			sum += a;
+		}
+	}
+	printf("%lu\n", sum);
+	return (0);
+}
+
+/**
+ * int main(void)
 {
 	int sum_of_evens = 0;
 	int a, b;
@@ -25,3 +53,4 @@ int main(void)
 	printf("%d\n", sum_of_evens);
 	return (0);
 }
+**/
