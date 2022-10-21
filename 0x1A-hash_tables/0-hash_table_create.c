@@ -12,6 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (arr == NULL)
 	{
+		free(arr);
 		return (NULL);
 	}
 
