@@ -1,1 +1,1 @@
-Hash Tables as a Data Structure
+Hash Tables as a data structure
