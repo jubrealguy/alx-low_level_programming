@@ -11,7 +11,7 @@ all: $(OBJ)
 
 # deletes all emacs and vim temp files along with the executable
 clean:
-	$(RM) ~* $(NAME)
+	$(RM) *~ $(NAME)
 
 # deletes all object files
 oclean:
