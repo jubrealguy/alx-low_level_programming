@@ -16,7 +16,10 @@ int print_search(int *array, int x, int y)
 	printf("Searching in array: ");
 	for (i = x; i <= y; i++)
 	{
-		printf("%d ", array[i]);
+		printf("%d", array[i]);
+		if (i == y)
+			continue;
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
