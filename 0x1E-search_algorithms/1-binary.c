@@ -32,6 +32,9 @@ int print_search(int *array, int x, int y)
 
 int binary_search(int *array, size_t size, int value)
 {
+	if (size == 0 || array == NULL)
+		return (-1)
+
 	int left_index = 0;
 	int right_index = size - 1;
 
