@@ -35,12 +35,11 @@ int jump_search(int *array, size_t size, int value)
 				return (j);
 			}
 		}
-		/*if (value > array[b] && a == len - 1)
-		 * {
-		 * printf("Value found between indexes [%d] and [%d]\n", a, b);
-		 * printf("Value checked array[%d] = [%d]\n", a, array[a]);
-		 * }
-		 */
+		if (a == len - 1 && value >= array[b])
+		{
+			printf("Value found between indexes [%d] and [%d]\n", a, b);
+			printf("Value checked array[%d] = [%d]\n", a, array[a]);
+		}
 
 		a = b;
 		b += sqrt(len);
